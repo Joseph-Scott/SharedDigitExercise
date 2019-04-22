@@ -22,6 +22,23 @@ public class SharedDigit {
 
     public static boolean hasSharedDigit(int num1, int num2) {
 
+        if ((num1 < 10 || num1 > 99) || (num2 < 10 || num2 > 99)) {
+            return false;
+        }
+
+        int lastDigitA = num1 % 10;
+        int lastDigitB = num2 % 10;
+
+        int firstDigitA = num1 / 10;
+        int firstDigitB = num2 / 10;
+
+        if ((lastDigitA == lastDigitB) || (firstDigitA == firstDigitB) || (lastDigitA == firstDigitB) || (lastDigitB == firstDigitA)) {
+
+            return true;
+        }
+
+        return false;
+
     }
 
 }
