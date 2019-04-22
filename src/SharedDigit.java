@@ -20,7 +20,7 @@
 
 public class SharedDigit {
 
-    public static int hasSharedDigit(int num1, int num2) {
+    public static boolean hasSharedDigit(int num1, int num2) {
 
     }
 
